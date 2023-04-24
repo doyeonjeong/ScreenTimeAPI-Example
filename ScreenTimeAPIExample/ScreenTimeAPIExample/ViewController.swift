@@ -9,15 +9,12 @@ import UIKit
 
 final class ViewController: UIViewController {
     
+    private let youTubeBlocker = YouTubeBlocker()
+    
     private let _blockYouTubeButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("유튜브 차단하기", for: .normal)
-        button.layer.shadowColor = UIColor.black.cgColor
-        button.layer.shadowOffset = CGSize(width: 0, height: 2)
-        button.layer.shadowRadius = 2
-        button.layer.shadowOpacity = 0.5
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.addTarget(self, action: #selector(_buttonPressed), for: .touchUpInside)
         return button
     }()
     
@@ -29,13 +26,13 @@ final class ViewController: UIViewController {
 
 extension ViewController {
     private func _setup() {
-        _setDelegates()
         _addSubviews()
         _setConstraints()
+        _addTargets()
     }
     
-    private func _setDelegates() {
-        // TODO: Set delegates
+    private func _addTargets() {
+        _blockYouTubeButton.addTarget(self, action: #selector(_blockYouTubeButtonTapped), for: .touchUpInside)
     }
     
     private func _addSubviews() {
@@ -51,7 +48,14 @@ extension ViewController {
 }
 
 extension ViewController {
-    @objc private func _buttonPressed() {
-        print("button pressed")
+    @objc private func _blockYouTubeButtonTapped() {
+        youTubeBlocker.blockYouTube { result in
+            switch result {
+            case .success():
+                print("유튜브 차단 성공")
+            case .failure(let error):
+                print("유튜브 차단 실패: \(error.localizedDescription)")
+            }
+        }
     }
 }
