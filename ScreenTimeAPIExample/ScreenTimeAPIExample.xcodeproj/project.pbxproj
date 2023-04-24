@@ -15,6 +15,8 @@
 		8F7DEE9229F680CF0017CD69 /* ScreenTimeAPIExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7DEE9129F680CF0017CD69 /* ScreenTimeAPIExampleTests.swift */; };
 		8F7DEE9C29F680CF0017CD69 /* ScreenTimeAPIExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7DEE9B29F680CF0017CD69 /* ScreenTimeAPIExampleUITests.swift */; };
 		8F7DEE9E29F680CF0017CD69 /* ScreenTimeAPIExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7DEE9D29F680CF0017CD69 /* ScreenTimeAPIExampleUITestsLaunchTests.swift */; };
+		8F7DEEAE29F692920017CD69 /* FamilyControls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F7DEEAD29F692920017CD69 /* FamilyControls.framework */; };
+		8F7DEEB029F692A80017CD69 /* DeviceActivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F7DEEAF29F692A80017CD69 /* DeviceActivity.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		8F7DEE9729F680CF0017CD69 /* ScreenTimeAPIExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreenTimeAPIExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F7DEE9B29F680CF0017CD69 /* ScreenTimeAPIExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTimeAPIExampleUITests.swift; sourceTree = "<group>"; };
 		8F7DEE9D29F680CF0017CD69 /* ScreenTimeAPIExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTimeAPIExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8F7DEEAD29F692920017CD69 /* FamilyControls.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FamilyControls.framework; path = System/Library/Frameworks/FamilyControls.framework; sourceTree = SDKROOT; };
+		8F7DEEAF29F692A80017CD69 /* DeviceActivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeviceActivity.framework; path = System/Library/Frameworks/DeviceActivity.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F7DEEAE29F692920017CD69 /* FamilyControls.framework in Frameworks */,
+				8F7DEEB029F692A80017CD69 /* DeviceActivity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +87,7 @@
 				8F7DEE9029F680CF0017CD69 /* ScreenTimeAPIExampleTests */,
 				8F7DEE9A29F680CF0017CD69 /* ScreenTimeAPIExampleUITests */,
 				8F7DEE7829F680CC0017CD69 /* Products */,
+				8F7DEEAC29F692920017CD69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +145,15 @@
 				8F7DEE8829F680CF0017CD69 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		8F7DEEAC29F692920017CD69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F7DEEAF29F692A80017CD69 /* DeviceActivity.framework */,
+				8F7DEEAD29F692920017CD69 /* FamilyControls.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
