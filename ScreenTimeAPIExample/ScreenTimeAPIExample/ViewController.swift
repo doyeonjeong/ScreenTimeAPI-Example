@@ -9,11 +9,16 @@ import UIKit
 
 final class ViewController: UIViewController {
     
-    private let _helloWorldLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Hello World"
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
+    private let _blockYouTubeButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("유튜브 차단하기", for: .normal)
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOffset = CGSize(width: 0, height: 2)
+        button.layer.shadowRadius = 2
+        button.layer.shadowOpacity = 0.5
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(_buttonPressed), for: .touchUpInside)
+        return button
     }()
     
     override func viewDidLoad() {
@@ -34,13 +39,19 @@ extension ViewController {
     }
     
     private func _addSubviews() {
-        view.addSubview(_helloWorldLabel)
+        view.addSubview(_blockYouTubeButton)
     }
     
     private func _setConstraints() {
         NSLayoutConstraint.activate([
-            _helloWorldLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            _helloWorldLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+            _blockYouTubeButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            _blockYouTubeButton.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
+    }
+}
+
+extension ViewController {
+    @objc private func _buttonPressed() {
+        print("button pressed")
     }
 }
