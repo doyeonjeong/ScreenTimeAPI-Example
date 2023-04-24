@@ -82,6 +82,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F56E03229F74D67005ED24E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8F56E03729F74DB4005ED24E /* Model */,
+				8F56E03629F74D9C005ED24E /* Common */,
+				8F56E03529F74D94005ED24E /* Service */,
+				8F56E03429F74D85005ED24E /* ViewModel */,
+				8F56E03329F74D80005ED24E /* View */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		8F56E03329F74D80005ED24E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8F7DEE7E29F680CC0017CD69 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8F56E03429F74D85005ED24E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8F56E03529F74D94005ED24E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		8F56E03629F74D9C005ED24E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		8F56E03729F74DB4005ED24E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8F7DEEB129F6A5140017CD69 /* YouTubeBlocker.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		8F7DEE6E29F680CC0017CD69 = {
 			isa = PBXGroup;
 			children = (
@@ -106,10 +155,9 @@
 		8F7DEE7929F680CC0017CD69 /* ScreenTimeAPIExample */ = {
 			isa = PBXGroup;
 			children = (
+				8F56E03229F74D67005ED24E /* Sources */,
 				8F7DEEAB29F682AB0017CD69 /* Resources */,
 				8F7DEEAA29F681400017CD69 /* Application */,
-				8F7DEE7E29F680CC0017CD69 /* ViewController.swift */,
-				8F7DEEB129F6A5140017CD69 /* YouTubeBlocker.swift */,
 			);
 			path = ScreenTimeAPIExample;
 			sourceTree = "<group>";
