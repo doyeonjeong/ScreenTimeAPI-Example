@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F56E03829F7654C005ED24E /* ScreenTimeAPIExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScreenTimeAPIExample.entitlements; sourceTree = "<group>"; };
 		8F7DEE7729F680CC0017CD69 /* ScreenTimeAPIExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenTimeAPIExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F7DEE7A29F680CC0017CD69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F7DEE7C29F680CC0017CD69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -155,6 +156,7 @@
 		8F7DEE7929F680CC0017CD69 /* ScreenTimeAPIExample */ = {
 			isa = PBXGroup;
 			children = (
+				8F56E03829F7654C005ED24E /* ScreenTimeAPIExample.entitlements */,
 				8F56E03229F74D67005ED24E /* Sources */,
 				8F7DEEAB29F682AB0017CD69 /* Resources */,
 				8F7DEEAA29F681400017CD69 /* Application */,
@@ -507,6 +509,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ScreenTimeAPIExample/ScreenTimeAPIExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 62SDS28JUT;
@@ -538,6 +541,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ScreenTimeAPIExample/ScreenTimeAPIExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 62SDS28JUT;

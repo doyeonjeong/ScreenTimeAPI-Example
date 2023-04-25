@@ -6,10 +6,12 @@
 //
 
 import UIKit
+import FamilyControls
 
 final class ViewController: UIViewController {
     
     private let youTubeBlocker = YouTubeBlocker()
+    private let center = AuthorizationCenter.shared
     
     private let _blockYouTubeButton: UIButton = {
         let button = UIButton(type: .system)
@@ -21,6 +23,17 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         _setup()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        Task {
+            do {
+                try await center.requestAuthorization(for: .individual)
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
     }
 }
 
