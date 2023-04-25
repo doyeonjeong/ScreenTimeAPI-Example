@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8F56E03A29F76ECA005ED24E /* BlockingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F56E03929F76ECA005ED24E /* BlockingManager.swift */; };
+		8F56E03C29F7808A005ED24E /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F56E03B29F7808A005ED24E /* SwiftUIView.swift */; };
 		8F7DEE7B29F680CC0017CD69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7DEE7A29F680CC0017CD69 /* AppDelegate.swift */; };
 		8F7DEE7D29F680CC0017CD69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7DEE7C29F680CC0017CD69 /* SceneDelegate.swift */; };
 		8F7DEE7F29F680CC0017CD69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7DEE7E29F680CC0017CD69 /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		8F56E03829F7654C005ED24E /* ScreenTimeAPIExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScreenTimeAPIExample.entitlements; sourceTree = "<group>"; };
 		8F56E03929F76ECA005ED24E /* BlockingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockingManager.swift; sourceTree = "<group>"; };
+		8F56E03B29F7808A005ED24E /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		8F7DEE7729F680CC0017CD69 /* ScreenTimeAPIExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenTimeAPIExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F7DEE7A29F680CC0017CD69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F7DEE7C29F680CC0017CD69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				8F7DEE7E29F680CC0017CD69 /* ViewController.swift */,
+				8F56E03B29F7808A005ED24E /* SwiftUIView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 			files = (
 				8F7DEE7F29F680CC0017CD69 /* ViewController.swift in Sources */,
 				8F7DEE7B29F680CC0017CD69 /* AppDelegate.swift in Sources */,
+				8F56E03C29F7808A005ED24E /* SwiftUIView.swift in Sources */,
 				8F7DEEB229F6A5140017CD69 /* YouTubeBlocker.swift in Sources */,
 				8F56E03A29F76ECA005ED24E /* BlockingManager.swift in Sources */,
 				8F7DEE7D29F680CC0017CD69 /* SceneDelegate.swift in Sources */,
