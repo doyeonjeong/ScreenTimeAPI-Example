@@ -29,6 +29,10 @@ final class ViewController: UIViewController {
     private let _blockButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("차단하기", for: .normal)
+        button.titleLabel?.font = .systemFont(ofSize: 18, weight: .bold)
+        button.setTitleColor(.white, for: .normal)
+        button.backgroundColor = .red
+        button.layer.cornerRadius = 8
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -36,6 +40,10 @@ final class ViewController: UIViewController {
     private let _releaseButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("해제하기", for: .normal)
+        button.titleLabel?.font = .systemFont(ofSize: 18, weight: .bold)
+        button.setTitleColor(.white, for: .normal)
+        button.backgroundColor = .blue
+        button.layer.cornerRadius = 8
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -44,6 +52,7 @@ final class ViewController: UIViewController {
         let stackView = UIStackView()
         stackView.axis = .vertical
         stackView.spacing = 10
+        stackView.distribution = .fillEqually
         stackView.translatesAutoresizingMaskIntoConstraints = false
         return stackView
     }()
@@ -91,10 +100,10 @@ extension ViewController {
         ])
 
         NSLayoutConstraint.activate([
-            //_buttonStackView.topAnchor.constraint(equalTo: view.bottomAnchor, constant: -60),
-            _buttonStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            _buttonStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            _buttonStackView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+            _buttonStackView.topAnchor.constraint(equalTo: view.bottomAnchor, constant: -160),
+            _buttonStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 60),
+            _buttonStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -60),
+            _buttonStackView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -60)
         ])
     }
 }
@@ -102,8 +111,7 @@ extension ViewController {
 // MARK: - Actions
 extension ViewController {
     @objc private func _tappedBlockButton() {
-        print("_tappedBlockButton")
-        _youTubeBlocker.blockYouTube { result in
+        _youTubeBlocker.block { result in
             switch result {
             case .success():
                 print("차단 성공")
@@ -114,7 +122,7 @@ extension ViewController {
     }
     
     @objc private func _tappedReleaseButton() {
-        print("_tappedReleaseButton")
+        print("차단 해제")
         _youTubeBlocker.unblockAllApps()
     }
     

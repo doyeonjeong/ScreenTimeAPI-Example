@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		8F56E03C29F7808A005ED24E /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F56E03B29F7808A005ED24E /* SwiftUIView.swift */; };
 		8F7092DE29F8FD450040955D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7092DD29F8FD450040955D /* Extensions.swift */; };
-		8F7092E029F9061B0040955D /* ALL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7092DF29F9061B0040955D /* ALL.swift */; };
+		8F7092E229F9567C0040955D /* YouTubeBlocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7092E129F9567C0040955D /* YouTubeBlocker.swift */; };
+		8F7092E429F956BA0040955D /* MyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7092E329F956BA0040955D /* MyModel.swift */; };
 		8F7DEE7B29F680CC0017CD69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7DEE7A29F680CC0017CD69 /* AppDelegate.swift */; };
 		8F7DEE7D29F680CC0017CD69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7DEE7C29F680CC0017CD69 /* SceneDelegate.swift */; };
 		8F7DEE7F29F680CC0017CD69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7DEE7E29F680CC0017CD69 /* ViewController.swift */; };
@@ -43,7 +44,8 @@
 		8F56E03829F7654C005ED24E /* ScreenTimeAPIExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScreenTimeAPIExample.entitlements; sourceTree = "<group>"; };
 		8F56E03B29F7808A005ED24E /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		8F7092DD29F8FD450040955D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		8F7092DF29F9061B0040955D /* ALL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALL.swift; sourceTree = "<group>"; };
+		8F7092E129F9567C0040955D /* YouTubeBlocker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeBlocker.swift; sourceTree = "<group>"; };
+		8F7092E329F956BA0040955D /* MyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyModel.swift; sourceTree = "<group>"; };
 		8F7DEE7729F680CC0017CD69 /* ScreenTimeAPIExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenTimeAPIExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F7DEE7A29F680CC0017CD69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F7DEE7C29F680CC0017CD69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,7 +95,8 @@
 				8F7DEE7E29F680CC0017CD69 /* ViewController.swift */,
 				8F56E03B29F7808A005ED24E /* SwiftUIView.swift */,
 				8F7092DD29F8FD450040955D /* Extensions.swift */,
-				8F7092DF29F9061B0040955D /* ALL.swift */,
+				8F7092E129F9567C0040955D /* YouTubeBlocker.swift */,
+				8F7092E329F956BA0040955D /* MyModel.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -306,11 +309,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F7DEE7F29F680CC0017CD69 /* ViewController.swift in Sources */,
+				8F7092E229F9567C0040955D /* YouTubeBlocker.swift in Sources */,
 				8F7092DE29F8FD450040955D /* Extensions.swift in Sources */,
 				8F7DEE7B29F680CC0017CD69 /* AppDelegate.swift in Sources */,
 				8F56E03C29F7808A005ED24E /* SwiftUIView.swift in Sources */,
-				8F7092E029F9061B0040955D /* ALL.swift in Sources */,
 				8F7DEE7D29F680CC0017CD69 /* SceneDelegate.swift in Sources */,
+				8F7092E429F956BA0040955D /* MyModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,7 +14,15 @@ struct SwiftUIView: View {
     
     var body: some View {
         VStack {
-            Button("Present FamilyActivityPicker") { isPresented.toggle() }
+            Button(action: { isPresented.toggle() }) {
+                Text("차단할 앱 목록 확인하기 🤗")
+                    .font(.system(size: 18, weight: .bold))
+                    .foregroundColor(.white)
+                    .padding(.vertical, 12)
+                    .padding(.horizontal, 24)
+                    .background(Color.blue)
+                    .cornerRadius(8)
+            }
                 .familyActivityPicker(isPresented: $isPresented, selection: $model.newSelection)
         }
     }
