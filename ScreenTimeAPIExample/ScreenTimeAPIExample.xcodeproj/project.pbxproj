@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8F56E03A29F76ECA005ED24E /* BlockingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F56E03929F76ECA005ED24E /* BlockingManager.swift */; };
 		8F56E03C29F7808A005ED24E /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F56E03B29F7808A005ED24E /* SwiftUIView.swift */; };
-		8F56E03E29F78761005ED24E /* YouTubeBlockerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F56E03D29F78760005ED24E /* YouTubeBlockerViewModel.swift */; };
+		8F7092DE29F8FD450040955D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7092DD29F8FD450040955D /* Extensions.swift */; };
+		8F7092E029F9061B0040955D /* ALL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7092DF29F9061B0040955D /* ALL.swift */; };
 		8F7DEE7B29F680CC0017CD69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7DEE7A29F680CC0017CD69 /* AppDelegate.swift */; };
 		8F7DEE7D29F680CC0017CD69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7DEE7C29F680CC0017CD69 /* SceneDelegate.swift */; };
 		8F7DEE7F29F680CC0017CD69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7DEE7E29F680CC0017CD69 /* ViewController.swift */; };
@@ -20,7 +20,6 @@
 		8F7DEE9E29F680CF0017CD69 /* ScreenTimeAPIExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7DEE9D29F680CF0017CD69 /* ScreenTimeAPIExampleUITestsLaunchTests.swift */; };
 		8F7DEEAE29F692920017CD69 /* FamilyControls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F7DEEAD29F692920017CD69 /* FamilyControls.framework */; };
 		8F7DEEB029F692A80017CD69 /* DeviceActivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F7DEEAF29F692A80017CD69 /* DeviceActivity.framework */; };
-		8F7DEEB229F6A5140017CD69 /* YouTubeBlocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7DEEB129F6A5140017CD69 /* YouTubeBlocker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,9 +41,9 @@
 
 /* Begin PBXFileReference section */
 		8F56E03829F7654C005ED24E /* ScreenTimeAPIExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScreenTimeAPIExample.entitlements; sourceTree = "<group>"; };
-		8F56E03929F76ECA005ED24E /* BlockingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockingManager.swift; sourceTree = "<group>"; };
 		8F56E03B29F7808A005ED24E /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
-		8F56E03D29F78760005ED24E /* YouTubeBlockerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeBlockerViewModel.swift; sourceTree = "<group>"; };
+		8F7092DD29F8FD450040955D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8F7092DF29F9061B0040955D /* ALL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALL.swift; sourceTree = "<group>"; };
 		8F7DEE7729F680CC0017CD69 /* ScreenTimeAPIExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenTimeAPIExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F7DEE7A29F680CC0017CD69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F7DEE7C29F680CC0017CD69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,7 +58,6 @@
 		8F7DEE9D29F680CF0017CD69 /* ScreenTimeAPIExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTimeAPIExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8F7DEEAD29F692920017CD69 /* FamilyControls.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FamilyControls.framework; path = System/Library/Frameworks/FamilyControls.framework; sourceTree = SDKROOT; };
 		8F7DEEAF29F692A80017CD69 /* DeviceActivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeviceActivity.framework; path = System/Library/Frameworks/DeviceActivity.framework; sourceTree = SDKROOT; };
-		8F7DEEB129F6A5140017CD69 /* YouTubeBlocker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeBlocker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,53 +90,12 @@
 		8F56E03229F74D67005ED24E /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				8F56E03729F74DB4005ED24E /* Model */,
-				8F56E03629F74D9C005ED24E /* Common */,
-				8F56E03529F74D94005ED24E /* Service */,
-				8F56E03429F74D85005ED24E /* ViewModel */,
-				8F56E03329F74D80005ED24E /* View */,
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
-		8F56E03329F74D80005ED24E /* View */ = {
-			isa = PBXGroup;
-			children = (
 				8F7DEE7E29F680CC0017CD69 /* ViewController.swift */,
 				8F56E03B29F7808A005ED24E /* SwiftUIView.swift */,
+				8F7092DD29F8FD450040955D /* Extensions.swift */,
+				8F7092DF29F9061B0040955D /* ALL.swift */,
 			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		8F56E03429F74D85005ED24E /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				8F56E03D29F78760005ED24E /* YouTubeBlockerViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		8F56E03529F74D94005ED24E /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				8F56E03929F76ECA005ED24E /* BlockingManager.swift */,
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		8F56E03629F74D9C005ED24E /* Common */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		8F56E03729F74DB4005ED24E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				8F7DEEB129F6A5140017CD69 /* YouTubeBlocker.swift */,
-			);
-			path = Model;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		8F7DEE6E29F680CC0017CD69 = {
@@ -348,12 +305,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F56E03E29F78761005ED24E /* YouTubeBlockerViewModel.swift in Sources */,
 				8F7DEE7F29F680CC0017CD69 /* ViewController.swift in Sources */,
+				8F7092DE29F8FD450040955D /* Extensions.swift in Sources */,
 				8F7DEE7B29F680CC0017CD69 /* AppDelegate.swift in Sources */,
 				8F56E03C29F7808A005ED24E /* SwiftUIView.swift in Sources */,
-				8F7DEEB229F6A5140017CD69 /* YouTubeBlocker.swift in Sources */,
-				8F56E03A29F76ECA005ED24E /* BlockingManager.swift in Sources */,
+				8F7092E029F9061B0040955D /* ALL.swift in Sources */,
 				8F7DEE7D29F680CC0017CD69 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
