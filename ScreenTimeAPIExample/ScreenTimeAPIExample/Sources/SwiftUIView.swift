@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUIView: View {
     
-    @EnvironmentObject var model: MyModel
+    @EnvironmentObject var model: BlockingApplicationModel
     @State var isPresented = false
     
     var body: some View {

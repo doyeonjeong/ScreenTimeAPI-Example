@@ -18,7 +18,7 @@ final class ViewController: UIViewController {
     private let _youTubeBlocker = YouTubeBlocker()
 
     private lazy var _contentView: UIHostingController<some View> = {
-        let model = MyModel.shared
+        let model = BlockingApplicationModel.shared
         let hostingController = UIHostingController(
             rootView: SwiftUIView()
                 .environmentObject(model)

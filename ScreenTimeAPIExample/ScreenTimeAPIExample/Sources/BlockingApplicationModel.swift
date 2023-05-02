@@ -9,8 +9,8 @@ import Foundation
 import FamilyControls
 import ManagedSettings
 
-final class MyModel: ObservableObject {
-    static let shared = MyModel()
+final class BlockingApplicationModel: ObservableObject {
+    static let shared = BlockingApplicationModel()
     
     @Published var newSelection: FamilyActivitySelection = .init()
     
